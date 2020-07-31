@@ -29,7 +29,6 @@ steps:
 
 - task: VSTest@2
   inputs:
-    testAssemblyVer2: |
-    **\$(BuildConfiguration)\*SeleniumNUnitParam*.dll
+    testAssemblyVer2: '**\$(BuildConfiguration)\*SeleniumNUnitParam*.dll'
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
